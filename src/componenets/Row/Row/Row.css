@@ -1,0 +1,36 @@
+
+.row {
+  margin-left: 20px;
+  color: white;
+}
+
+.row h1 {
+  margin-bottom: 20px;
+  font-size: 24px; /* Adjust as needed */
+  font-weight: bold;
+}
+
+.row__posters {
+  display: flex;
+  overflow-y: hidden; /* Prevent vertical overflow */
+  overflow-x: scroll; /* Horizontal scrolling for mobile */
+  padding: 10px; /* Spacing around posters */
+}
+
+.row__poster {
+  width: auto; /* Allow auto-width to maintain responsiveness */
+  max-height: 150px; /* Adjust height as needed */
+  height: 100%; /* Use 100% height */
+  object-fit: contain; /* Ensure images fit without cropping */
+  margin-right: 10px; /* Space between posters */
+  transition: transform 0.2s ease; /* Animation effect on hover */
+  cursor: pointer;
+}
+
+.row__poster:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.row__posterLarge {
+  max-height: 300px; /* Height for large posters */
+}
